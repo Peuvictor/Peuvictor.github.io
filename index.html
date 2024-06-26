@@ -7,14 +7,15 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
-  <header class="bg-dark text-white text-center py-5">
+  <header class="bg-dark text-white text-center py-5 animated-banner">
     <div class="container">
       <img src="imagens/minha-foto.jpg" alt="Foto de Pedro Guimarães" class="img-fluid rounded-circle mb-3" style="width: 150px;">
       <h1 class="display-4">Olá, sou Pedro Guimarães</h1>
       <p class="lead">Desenvolvedor Web | Criador de Soluções Inovadoras</p>
-      <nav class="nav justify-content-center">
+      <nav class="nav justify-content-center navbar">
         <a class="nav-link text-white" href="#sobre">Sobre Mim</a>
         <a class="nav-link text-white" href="#projetos">Projetos</a>
         <a class="nav-link text-white" href="#habilidades">Habilidades</a>
@@ -23,14 +24,14 @@
     </div>
   </header>
   <main class="container my-5">
-    <section id="sobre" class="my-5 text-center">
+    <section id="sobre" class="my-5 text-center" data-aos="fade-up">
       <h2 class="mb-4">Sobre Mim</h2>
       <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras. Recentemente, conclui um bootcamp de desenvolvimento web na Le Wagon, onde aprendi Ruby on Rails e desenvolvi habilidades sólidas em JavaScript.</p>
     </section>
-    <section id="projetos" class="my-5 text-center">
+    <section id="projetos" class="my-5 text-center" data-aos="fade-up">
       <h2 class="mb-4">Projetos</h2>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-up">
           <div class="card mb-4 shadow-sm">
             <img src="imagens/alter-snack.jpg" class="card-img-top" alt="Projeto Alter Snack">
             <div class="card-body">
@@ -41,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-up">
           <div class="card mb-4 shadow-sm">
             <img src="imagens/futwear.jpg" class="card-img-top" alt="Projeto Futwear">
             <div class="card-body">
@@ -54,25 +55,25 @@
         </div>
       </div>
     </section>
-    <section id="habilidades" class="my-5 text-center">
+    <section id="habilidades" class="my-5 text-center" data-aos="fade-up">
       <h2 class="mb-4">Habilidades</h2>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">HTML5</li>
-        <li class="list-group-item">CSS</li>
-        <li class="list-group-item">JavaScript</li>
-        <li class="list-group-item">Ruby</li>
-        <li class="list-group-item">Ruby on Rails</li>
-        <li class="list-group-item">Figma</li>
-        <li class="list-group-item">Heroku</li>
-        <li class="list-group-item">Stimulus</li>
-        <li class="list-group-item">SQL</li>
+        <li class="list-group-item"><i class="fab fa-html5"></i> HTML5</li>
+        <li class="list-group-item"><i class="fab fa-css3-alt"></i> CSS</li>
+        <li class="list-group-item"><i class="fab fa-js"></i> JavaScript</li>
+        <li class="list-group-item"><i class="fas fa-gem"></i> Ruby</li>
+        <li class="list-group-item"><i class="fas fa-gem"></i> Ruby on Rails</li>
+        <li class="list-group-item"><i class="fab fa-figma"></i> Figma</li>
+        <li class="list-group-item"><i class="fas fa-cloud"></i> Heroku</li>
+        <li class="list-group-item"><i class="fas fa-bolt"></i> Stimulus</li>
+        <li class="list-group-item"><i class="fas fa-database"></i> SQL</li>
       </ul>
     </section>
-    <section id="contato" class="my-5 text-center">
+    <section id="contato" class="my-5 text-center" data-aos="fade-up">
       <h2 class="mb-4">Contato</h2>
       <p><a href="mailto:peuvictor22@gmail.com"><i class="fas fa-envelope"></i> peuvictor22@gmail.com</a></p>
       <p>
-        <a href="https://www.linkedin.com/in/pedro-guimar%C3%A3es-244a4b148/?trk=opento_sprofile_goalscard" class="mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://www.linkedin.com/in/pedro-guimar%C3%A3es-244a4b148" class="mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="https://github.com/Peuvictor" class="mx-2"><i class="fab fa-github"></i> GitHub</a>
       </p>
     </section>
@@ -83,6 +84,10 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
