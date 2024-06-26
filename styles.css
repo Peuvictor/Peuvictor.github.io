@@ -19,3 +19,30 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+.nav .active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  color: inherit; /* Mantém a cor do texto ao usar links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+a:hover {
+  color: #007bff; /* Cor ao passar o mouse */
+}
+
+i {
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+#contato p {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+h2 {
+  text-align: center; /* Centraliza todos os h2 */
+}
