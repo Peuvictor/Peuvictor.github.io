@@ -4,62 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio de Pedro Guimarães</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Olá, souPedro Guimarães</h1>
-    <p>Desenvolvedor Web | Criador de Soluções Inovadoras</p>
-    <nav>
-      <a href="#sobre">Sobre Mim</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <header class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Olá, sou Pedro Guimarães</h1>
+      <p class="lead">Desenvolvedor Web | Criador de Soluções Inovadoras</p>
+      <nav class="nav justify-content-center">
+        <a class="nav-link text-white" href="#sobre">Sobre Mim</a>
+        <a class="nav-link text-white" href="#projetos">Projetos</a>
+        <a class="nav-link text-white" href="#habilidades">Habilidades</a>
+        <a class="nav-link text-white" href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
+  <main class="container my-5">
+    <section id="sobre" class="my-5">
+      <h2 class="mb-4">Sobre Mim</h2>
       <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras. Recentemente, conclui um bootcamp de desenvolvimento web na Le Wagon, onde aprendi Ruby on Rails e desenvolvi habilidades sólidas em JavaScript.</p>
     </section>
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <div class="projeto">
-        <h3>Alter Snack</h3>
-        <p>Alter Snack é um site tipo iFood para pessoas com limitações alimentares. Utiliza Stripe para pagamentos e possui integração com ChatGPT para pesquisar receitas.</p>
-        <a href="https://github.com/MatEstevam/altersnack">Ver no GitHub</a>
-        <a href="https://altersnack-matestevam-6b9d891e51d0.herokuapp.com/">Ver Demo</a>
-      </div>
-      <div class="projeto">
-        <h3>Futwear</h3>
-        <p>Futwear é um marketplace de camisas de futebol. O projeto visa conectar fãs de futebol com vendedores de camisas autênticas e personalizadas.</p>
-        <a href="https://github.com/Peuvictor/rails-marketplace">Ver no GitHub</a>
-        <a href="https://futwear-529c3b3e32cb.herokuapp.com/">Ver Demo</a>
+    <section id="projetos" class="my-5">
+      <h2 class="mb-4">Projetos</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Alter Snack</h3>
+              <p class="card-text">Alter Snack é um site tipo iFood para pessoas com limitações alimentares. Utiliza Stripe para pagamentos e possui integração com ChatGPT para pesquisar receitas.</p>
+              <a href="https://github.com/MatEstevam/altersnack" class="btn btn-primary">Ver no GitHub</a>
+              <a href="https://altersnack-matestevam-6b9d891e51d0.herokuapp.com/" class="btn btn-secondary">Ver Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h3 class="card-title">Futwear</h3>
+              <p class="card-text">Futwear é um marketplace de camisas de futebol. O projeto visa conectar fãs de futebol com vendedores de camisas autênticas e personalizadas.</p>
+              <a href="https://github.com/Peuvictor/rails-marketplace" class="btn btn-primary">Ver no GitHub</a>
+              <a href="https://futwear-529c3b3e32cb.herokuapp.com/" class="btn btn-secondary">Ver Demo</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Ruby</li>
-        <li>Ruby on Rails</li>
-        <li>Figma</li>
-        <li>Heroku</li>
-        <li>Stimulus</li>
-        <li>SQL</li>
+    <section id="habilidades" class="my-5">
+      <h2 class="mb-4">Habilidades</h2>
+      <ul class="list-group">
+        <li class="list-group-item">HTML5</li>
+        <li class="list-group-item">CSS</li>
+        <li class="list-group-item">JavaScript</li>
+        <li class="list-group-item">Ruby</li>
+        <li class="list-group-item">Ruby on Rails</li>
+        <li class="list-group-item">Figma</li>
+        <li class="list-group-item">Heroku</li>
+        <li class="list-group-item">Stimulus</li>
+        <li class="list-group-item">SQL</li>
       </ul>
     </section>
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Email: <a href="peuvictor22@gmail.com">peuvictor22@gmail.com</a></p>
+    <section id="contato" class="my-5">
+      <h2 class="mb-4">Contato</h2>
+      <p>Email: <a href="mailto:peuvictor22@gmail.com">peuvictor22@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/pedro-guimar%C3%A3es-244a4b148/?trk=opento_sprofile_goalscard">Seu LinkedIn</a></p>
       <p>GitHub: <a href="https://github.com/Peuvictor">Seu GitHub</a></p>
     </section>
   </main>
-  <footer>
+  <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2024 Pedro Guimarães. Todos os direitos reservados.</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
