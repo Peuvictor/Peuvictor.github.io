@@ -23,70 +23,96 @@
       </nav>
     </div>
   </header>
+
   <main class="container my-5">
     <section id="sobre" class="my-5 text-center" data-aos="fade-up">
       <h2 class="mb-4">Sobre Mim</h2>
-      <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras. Recentemente, conclui um bootcamp de desenvolvimento web na Le Wagon, onde aprendi Ruby on Rails e desenvolvi habilidades sólidas em JavaScript.</p>
+      <p>Sou um desenvolvedor web apaixonado por criar soluções robustas e resilientes. Com formação pelo bootcamp Le Wagon e cursando ADS na Unicesumar, foco meu trabalho no ecossistema Ruby on Rails, resolvendo desafios de integração de APIs, Web Scraping e interfaces dinâmicas.</p>
     </section>
+
     <section id="projetos" class="my-5 text-center" data-aos="fade-up">
       <h2 class="mb-4">Projetos</h2>
       <div class="row">
-        <div class="col-md-6" data-aos="fade-up">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card mb-4 shadow-sm border-primary">
+            <img src="imagens/filmow-insights.jpg" class="card-img-top" alt="Projeto Filmow Insights">
+            <div class="card-body">
+              <h3 class="card-title text-primary">Filmow Insights 🎬</h3>
+              <p class="card-text">Dashboard de filmes com Web Scraping. Implementa lógica de resiliência (fallback) para contornar bloqueios de IP (403) e tratamento de encoding UTF-8.</p>
+              <div class="mt-3">
+                <a href="https://github.com/Peuvictor/filmow-insights" class="btn btn-outline-primary btn-sm">GitHub</a>
+                <a href="https://filmow-insights.onrender.com/" class="btn btn-primary btn-sm">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
           <div class="card mb-4 shadow-sm">
             <img src="imagens/alter-snack.jpg" class="card-img-top" alt="Projeto Alter Snack">
             <div class="card-body">
               <h3 class="card-title">Alter Snack</h3>
-              <p class="card-text">Alter Snack é um site tipo iFood para pessoas com limitações alimentares. Utiliza Stripe para pagamentos e possui integração com ChatGPT para pesquisar receitas.</p>
-              <a href="https://github.com/MatEstevam/altersnack" class="btn btn-primary">Ver no GitHub</a>
-              <a href="https://altersnack-matestevam-6b9d891e51d0.herokuapp.com/" class="btn btn-secondary">Ver Demo</a>
+              <p class="card-text">Marketplace para restrições alimentares. Integração com Stripe para pagamentos e API do ChatGPT para geração de receitas personalizadas.</p>
+              <div class="mt-3">
+                <a href="https://github.com/MatEstevam/altersnack" class="btn btn-outline-primary btn-sm">GitHub</a>
+                <a href="https://altersnack-matestevam-6b9d891e51d0.herokuapp.com/" class="btn btn-primary btn-sm">Demo</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6" data-aos="fade-up">
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="card mb-4 shadow-sm">
             <img src="imagens/futwear.jpg" class="card-img-top" alt="Projeto Futwear">
             <div class="card-body">
               <h3 class="card-title">Futwear</h3>
-              <p class="card-text">Futwear é um marketplace de camisas de futebol. O projeto visa conectar fãs de futebol com vendedores de camisas autênticas e personalizadas.</p>
-              <a href="https://github.com/Peuvictor/rails-marketplace" class="btn btn-primary">Ver no GitHub</a>
-              <a href="https://futwear-529c3b3e32cb.herokuapp.com/" class="btn btn-secondary">Ver Demo</a>
+              <p class="card-text">Marketplace de camisas de futebol. Focado em conectar fãs e vendedores, com sistema de busca e gerenciamento de inventário em Rails.</p>
+              <div class="mt-3">
+                <a href="https://github.com/Peuvictor/rails-marketplace" class="btn btn-outline-primary btn-sm">GitHub</a>
+                <a href="https://futwear-529c3b3e32cb.herokuapp.com/" class="btn btn-primary btn-sm">Demo</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="habilidades" class="my-5 text-center" data-aos="fade-up">
       <h2 class="mb-4">Habilidades</h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"><i class="fab fa-html5"></i> HTML5</li>
-        <li class="list-group-item"><i class="fab fa-css3-alt"></i> CSS</li>
-        <li class="list-group-item"><i class="fab fa-js"></i> JavaScript</li>
-        <li class="list-group-item"><i class="fas fa-gem"></i> Ruby</li>
-        <li class="list-group-item"><i class="fas fa-gem"></i> Ruby on Rails</li>
-        <li class="list-group-item"><i class="fab fa-figma"></i> Figma</li>
-        <li class="list-group-item"><i class="fas fa-cloud"></i> Heroku</li>
-        <li class="list-group-item"><i class="fas fa-bolt"></i> Stimulus</li>
-        <li class="list-group-item"><i class="fas fa-database"></i> SQL</li>
-      </ul>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gem text-danger"></i> Ruby / Ruby on Rails (Hotwire & Turbo)</li>
+            <li class="list-group-item"><i class="fab fa-js text-warning"></i> JavaScript / Stimulus JS</li>
+            <li class="list-group-item"><i class="fas fa-database text-info"></i> SQL / PostgreSQL</li>
+            <li class="list-group-item"><i class="fab fa-html5 text-orange"></i> HTML5 / CSS3 (Tailwind & Bootstrap)</li>
+            <li class="list-group-item"><i class="fas fa-cloud-upload-alt text-primary"></i> Deploy (Render / Heroku)</li>
+            <li class="list-group-item"><i class="fab fa-git-alt"></i> Git / GitHub</li>
+          </ul>
+        </div>
+      </div>
     </section>
+
     <section id="contato" class="my-5 text-center" data-aos="fade-up">
       <h2 class="mb-4">Contato</h2>
-      <p><a href="mailto:peuvictor22@gmail.com"><i class="fas fa-envelope"></i> peuvictor22@gmail.com</a></p>
-      <p>
-        <a href="https://www.linkedin.com/in/pedro-guimar%C3%A3es-244a4b148" class="mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/Peuvictor" class="mx-2"><i class="fab fa-github"></i> GitHub</a>
-      </p>
+      <p><a href="mailto:peuvictor22@gmail.com" class="text-dark"><i class="fas fa-envelope"></i> peuvictor22@gmail.com</a></p>
+      <div class="mt-3">
+        <a href="https://www.linkedin.com/in/pedro-guimar%C3%A3es-244a4b148" class="btn btn-outline-dark mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Peuvictor" class="btn btn-outline-dark mx-2"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </section>
   </main>
+
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Pedro Guimarães. Todos os direitos reservados.</p>
+    <p class="mb-0">&copy; 2026 Pedro Guimarães. Todos os direitos reservados.</p>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ duration: 1000, once: true });
   </script>
   <script src="script.js"></script>
 </body>
