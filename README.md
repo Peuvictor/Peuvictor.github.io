@@ -1,51 +1,53 @@
-# Portfólio de Pedro Guimarães
+# 💻 Pedro Guimarães | Full Stack Developer
 
-Bem-vindo ao meu portfólio! Sou um desenvolvedor web apaixonado por criar soluções inovadoras. Recentemente, concluí um bootcamp de desenvolvimento web na Le Wagon, onde desenvolvi habilidades sólidas em Ruby on Rails, JavaScript e outras tecnologias modernas.
+Seja bem-vindo ao meu portfólio! Sou um desenvolvedor web focado no ecossistema **Ruby on Rails**, apaixonado por transformar desafios técnicos em soluções funcionais. Atualmente, curso **Análise e Desenvolvimento de Sistemas (UNICESUMAR)** e busco aplicar as melhores práticas de engenharia e UX em cada linha de código.
 
-## Sobre Mim
-
-Sou um desenvolvedor web com experiência em criar aplicações web robustas e escaláveis. Minha formação inclui um bootcamp intensivo na Le Wagon, onde trabalhei em vários projetos desafiadores que me permitiram aprimorar minhas habilidades técnicas e de resolução de problemas.
-
-## Projetos
-
-### Alter Snack
-
-Alter Snack é uma plataforma semelhante ao iFood, mas voltada para pessoas com limitações alimentares. O site permite que os usuários pesquisem receitas e façam pedidos de refeições adequadas às suas restrições alimentares. Utilizamos Stripe para processar pagamentos e integração com ChatGPT para fornecer recomendações de receitas.
-
-- **Tecnologias:** Ruby on Rails, JavaScript, Stripe API, ChatGPT API
-- **Código:** [Repositório no GitHub](https://github.com/MatEstevam/altersnack)
-- **Demonstração:** [Alter Snack Live](https://altersnack-matestevam-6b9d891e51d0.herokuapp.com/)
-
-### Futwear
-
-Futwear é um marketplace de camisas de futebol. A plataforma conecta fãs de futebol a vendedores de camisas autênticas e personalizadas. Os usuários podem navegar por uma variedade de produtos, fazer compras seguras e deixar avaliações dos produtos.
-
-- **Tecnologias:** Ruby on Rails, JavaScript, HTML, CSS
-- **Código:** [Repositório no GitHub](https://github.com/Peuvictor/rails-marketplace)
-- **Demonstração:** [Futwear Live](https://futwear-529c3b3e32cb.herokuapp.com/)
-
-## Habilidades
-
-- **Linguagens e Frameworks:** Ruby on Rails, JavaScript, HTML, CSS
-- **Ferramentas e Tecnologias:** Git, GitHub, Stripe API, ChatGPT API
-- **Outras Habilidades:** Desenvolvimento Ágil, Testes Automatizados, Integração Contínua
-
-## Formação
-
-- **Bootcamp de Desenvolvimento Web - Le Wagon**
-  - Aprendi a construir aplicações web completas com foco em backend e frontend, utilizando Ruby on Rails e JavaScript.
-  - Trabalhei em projetos reais, colaborando com outros desenvolvedores para criar soluções práticas e inovadoras.
-
-## Contato
-
-- **Email:** [peuvictor22@gmail.com](mailto:peuvictor22@gmail.com)
-- **LinkedIn:** [Seu LinkedIn](https://www.linkedin.com/in/pedro-guimar%C3%A3es-244a4b148/?trk=opento_sprofile_goalscard)
-- **GitHub:** [Seu GitHub](https://github.com/Peuvictor)
-
-## Agradecimentos
-
-Agradeço a todos os instrutores e colegas do bootcamp da Le Wagon por seu apoio e orientação durante essa jornada de aprendizado.
+📍 Belo Horizonte, MG
+🎓 ADS (Unicesumar) | Bootcamp Le Wagon (Ruby on Rails)
 
 ---
 
-[© 2024 Pedro Guimarães](https://github.com/Peuvictor)
+## 🚀 Projetos em Destaque
+
+### 🎬 [Filmow Insights](https://github.com/Peuvictor/filmow-insights)
+Dashboard de análise cinematográfica com automação de dados via Web Scraping.
+* **Destaque Técnico:** Implementação de lógica de **resiliência (Fallback)** para contornar bloqueios de IP (Erro 403) em produção no Render, garantindo a disponibilidade do serviço mesmo sob restrições de infraestrutura.
+* **Tech Stack:** Ruby 3.3, Rails 7.1, Hotwire (Turbo/Stimulus), PostgreSQL, Nokogiri.
+* **Live Demo:** [Filmow Insights Online](https://filmow-insights.onrender.com/)
+
+### 🥪 [Alter Snack](https://github.com/MatEstevam/altersnack)
+Marketplace estilo iFood focado em restrições alimentares (Projeto Le Wagon).
+* **Destaque Técnico:** Integração robusta com **Stripe API** para pagamentos e **OpenAI API (ChatGPT)** para sugestão dinâmica de receitas.
+* **Tech Stack:** Ruby on Rails, JavaScript, Stripe, Heroku.
+
+### 👕 [Futwear](https://github.com/Peuvictor/rails-marketplace)
+Marketplace especializado em camisas de futebol autênticas.
+* **Destaque Técnico:** Desenvolvimento de sistema de busca e gerenciamento de inventário para múltiplos vendedores.
+* **Tech Stack:** Ruby on Rails, Bootstrap, PostgreSQL.
+
+---
+
+## 🛠️ Habilidades Técnicas
+
+* **Backend:** Ruby (3.3), Ruby on Rails (7.x), SQL (PostgreSQL).
+* **Frontend:** JavaScript (ES6+), Hotwire (Turbo & Stimulus), HTML5, CSS3 (Tailwind, Bootstrap).
+* **Automação & APIs:** Web Scraping (Nokogiri), Integração de APIs (OpenAI, Stripe).
+* **Infra & DevOps:** Git, GitHub, Render, Heroku, Paridade de Ambientes (WSL2).
+
+---
+
+## 🎓 Formação
+
+* **Graduação em Análise e Desenvolvimento de Sistemas** – UNICESUMAR (Em andamento)
+* **Bootcamp de Desenvolvimento Web** – Le Wagon (Concluído)
+
+---
+
+## 📫 Contato
+
+* **LinkedIn:** [linkedin.com/in/pedro-guimarães](https://www.linkedin.com/in/pedro-guimar%C3%A3es-244a4b148)
+* **GitHub:** [github.com/Peuvictor](https://github.com/Peuvictor)
+* **Email:** [peuvictor22@gmail.com](mailto:peuvictor22@gmail.com)
+
+---
+[© 2026 Pedro Guimarães](https://github.com/Peuvictor)
