@@ -5,179 +5,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pedro Guimarães | Software Engineer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; }
-    .badge-senior { background-color: #f8f9fa; color: #495057; border: 1px solid #dee2e6; font-weight: 500; }
-    .section-title { font-weight: 700; letter-spacing: -0.5px; }
-    .card { transition: transform 0.2s ease-in-out; }
-    .card:hover { transform: translateY(-5px); }
+    body { font-family: 'Inter', sans-serif; background-color: #f4f6f8; }
+
+    /* Contraste Elegante (Azul Escuro Corporativo) */
+    .bg-senior-dark { background-color: #0b1c2d; }
+    .text-senior-accent { color: #2a69ac; }
+
+    .badge-senior { background-color: #e2e8f0; color: #334155; font-weight: 600; }
+    .section-title { font-weight: 700; letter-spacing: -0.5px; color: #0b1c2d; }
+
+    .card { border-radius: 12px; transition: transform 0.2s ease-in-out, box-shadow 0.2s; border: 1px solid #e2e8f0; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+
+    /* Alternância de seções para quebrar o branco */
+    .section-light { background-color: #ffffff; }
+    .section-gray { background-color: #f8fafc; }
   </style>
 </head>
-<body class="bg-light text-dark">
+<body class="text-dark">
 
-  <!-- Header Minimalista -->
-  <header class="py-5 mb-5 border-bottom bg-white">
-    <div class="container text-center" data-aos="fade-in">
-      <img src="imagens/minha-foto.jpg" alt="Pedro Guimarães" class="img-fluid rounded-circle mb-4 shadow-sm" style="width: 150px; height: 150px; object-fit: cover;">
-      <h1 class="display-5 fw-bold text-dark mb-2">Pedro Guimarães</h1>
-      <p class="lead text-muted mb-4">Software Engineer | Backend Architecture & Data Automation</p>
+  <!-- Header com Contraste Forte -->
+  <header class="py-5 bg-senior-dark text-white border-bottom border-secondary">
+    <div class="container text-center py-4" data-aos="fade-in">
+      <img src="imagens/minha-foto.jpg" alt="Pedro Guimarães" class="img-fluid rounded-circle mb-4 border border-3 border-secondary shadow" style="width: 150px; height: 150px; object-fit: cover;">
+      <h1 class="display-5 fw-bold mb-2">Pedro Guimarães</h1>
+      <p class="lead text-light mb-4 opacity-75">Software Engineer | Backend Architecture & Data Automation</p>
       <nav class="nav justify-content-center gap-3">
-        <a class="nav-link text-secondary fw-semibold" href="#sobre">Sobre</a>
-        <a class="nav-link text-secondary fw-semibold" href="#projetos">Projetos</a>
-        <a class="nav-link text-secondary fw-semibold" href="#arquitetura">Expertise</a>
-        <a class="nav-link text-secondary fw-semibold" href="#contato">Contato</a>
+        <a class="nav-link text-white fw-semibold" href="#sobre">Sobre</a>
+        <a class="nav-link text-white fw-semibold" href="#projetos">Projetos</a>
+        <a class="nav-link text-white fw-semibold" href="#arquitetura">Expertise</a>
+        <a class="nav-link text-white fw-semibold" href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-
-    <!-- Seção Sobre (Foco em Engenharia e Negócios) -->
-    <section id="sobre" class="mb-5 py-4" data-aos="fade-up">
-      <div class="row justify-content-center">
+  <main>
+    <!-- Seção Sobre (Fundo Branco) -->
+    <section id="sobre" class="py-5 section-light" data-aos="fade-up">
+      <div class="container row justify-content-center mx-auto">
         <div class="col-lg-8 text-center">
           <h2 class="section-title h3 mb-4">Engenharia orientada a resultados</h2>
           <p class="text-secondary fs-5 lh-lg">
-            Desenvolvedor com sólida base analítica, focado em construir sistemas escaláveis e automatizar processos complexos. Minha stack principal transita entre o ecossistema <strong>Ruby on Rails</strong> para agilidade e <strong>Java/Spring Boot</strong> para soluções robustas de nível corporativo.
+            Desenvolvedor com sólida base analítica, focado em construir sistemas escaláveis e automatizar processos complexos. Minha stack principal transita entre o ecossistema <strong>Ruby on Rails</strong> para agilidade e <strong>Java/Spring Boot</strong> para soluções robustas.
             <br><br>
-            Integro rotinas de <strong>Machine Learning (Python)</strong> e aproveito a infraestrutura cloud (Azure/GCP) para entregar software resiliente. Meu objetivo é alinhar código limpo com necessidades reais de negócio.
+            Integro rotinas de <strong>Machine Learning (Python)</strong> e aproveito infraestrutura cloud (Azure/GCP) para entregar software resiliente.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Projetos (Foco em Arquitetura) -->
-    <section id="projetos" class="mb-5 py-4" data-aos="fade-up">
-      <h2 class="section-title h3 text-center mb-5">Arquitetura & Projetos</h2>
-      <div class="row g-4">
+    <!-- Projetos (Fundo Cinza Suave) -->
+    <section id="projetos" class="py-5 section-gray" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title h3 text-center mb-5">Arquitetura & Projetos</h2>
+        <div class="row g-4">
 
-        <!-- Agendamentos BH -->
-        <div class="col-md-6">
-          <div class="card h-100 border-0 shadow-sm p-3">
-            <div class="card-body">
-              <h3 class="h5 fw-bold mb-3">Agendamentos BH SaaS</h3>
-              <p class="text-muted small mb-4">Marketplace multitenant desenvolvido com arquitetura conteinerizada. Gerencia conflitos de concorrência em tempo real para múltiplos prestadores de serviço.</p>
-              <div class="d-flex flex-wrap gap-2 mb-4">
-                <span class="badge badge-senior rounded-pill">Ruby on Rails</span>
-                <span class="badge badge-senior rounded-pill">PostgreSQL</span>
-                <span class="badge badge-senior rounded-pill">Docker</span>
-              </div>
-              <div class="d-flex gap-3">
-                <a href="https://bh-agendamentos.onrender.com/" target="_blank" class="text-primary text-decoration-none fw-semibold">Ver Produção &rarr;</a>
-                <a href="https://github.com/Peuvictor/bh_agendamentos" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+          <!-- Agendamentos BH -->
+          <div class="col-md-6">
+            <div class="card h-100 p-3 bg-white">
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-3 text-senior-accent">Agendamentos BH SaaS</h3>
+                <p class="text-muted small mb-4">Marketplace multitenant com arquitetura conteinerizada. Gerencia conflitos de concorrência em tempo real para múltiplos prestadores.</p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge badge-senior rounded-pill">Ruby on Rails</span>
+                  <span class="badge badge-senior rounded-pill">PostgreSQL</span>
+                  <span class="badge badge-senior rounded-pill">Docker</span>
+                </div>
+                <div class="d-flex gap-3 mt-auto">
+                  <a href="https://bh-agendamentos.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Ver Produção &rarr;</a>
+                  <a href="https://github.com/Peuvictor/bh_agendamentos" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Alter Snack -->
-        <div class="col-md-6">
-          <div class="card h-100 border-0 shadow-sm p-3">
-            <div class="card-body">
-              <h3 class="h5 fw-bold mb-3">Alter Snack E-commerce</h3>
-              <p class="text-muted small mb-4">Integração complexa de gateways de pagamento (Stripe) e processamento de linguagem natural (ChatGPT API) para curadoria automatizada de receitas restritivas.</p>
-              <div class="d-flex flex-wrap gap-2 mb-4">
-                <span class="badge badge-senior rounded-pill">Rails API</span>
-                <span class="badge badge-senior rounded-pill">Stripe Webhooks</span>
-                <span class="badge badge-senior rounded-pill">OpenAI SDK</span>
-              </div>
-              <div class="d-flex gap-3">
-                <a href="https://altersnack.onrender.com/" target="_blank" class="text-primary text-decoration-none fw-semibold">Ver Produção &rarr;</a>
-                <a href="https://github.com/MatEstevam/altersnack" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+          <!-- Alter Snack -->
+          <div class="col-md-6">
+            <div class="card h-100 p-3 bg-white">
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-3 text-senior-accent">Alter Snack E-commerce</h3>
+                <p class="text-muted small mb-4">Integração de gateway de pagamento (Stripe) e processamento de linguagem natural (ChatGPT API) para curadoria de receitas.</p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge badge-senior rounded-pill">Rails API</span>
+                  <span class="badge badge-senior rounded-pill">Stripe Webhooks</span>
+                  <span class="badge badge-senior rounded-pill">OpenAI SDK</span>
+                </div>
+                <div class="d-flex gap-3 mt-auto">
+                  <a href="https://altersnack.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Ver Produção &rarr;</a>
+                  <a href="https://github.com/MatEstevam/altersnack" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Job Automation -->
-        <div class="col-md-6">
-          <div class="card h-100 border-0 shadow-sm p-3">
-            <div class="card-body">
-              <h3 class="h5 fw-bold mb-3">Job Scraping & Automator</h3>
-              <p class="text-muted small mb-4">Pipelines de extração de dados utilizando Selenium. Focado em resiliência contra bloqueios, parseamento de DOM dinâmico e tratamento de dados não estruturados.</p>
-              <div class="d-flex flex-wrap gap-2 mb-4">
-                <span class="badge badge-senior rounded-pill">Python</span>
-                <span class="badge badge-senior rounded-pill">Selenium</span>
-                <span class="badge badge-senior rounded-pill">Data Pipelines</span>
-              </div>
-              <div class="d-flex gap-3">
-                <a href="#" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Filmow ML -->
-        <div class="col-md-6">
-          <div class="card h-100 border-0 shadow-sm p-3">
-            <div class="card-body">
-              <h3 class="h5 fw-bold mb-3">Filmow Insights & ML</h3>
-              <p class="text-muted small mb-4">Motor de recomendação híbrido. Utiliza Nokogiri para ingestão de dados massivos em UTF-8 e modelos preditivos em Python para clusterização de preferências.</p>
-              <div class="d-flex flex-wrap gap-2 mb-4">
-                <span class="badge badge-senior rounded-pill">Ruby/Nokogiri</span>
-                <span class="badge badge-senior rounded-pill">Machine Learning</span>
-              </div>
-              <div class="d-flex gap-3">
-                <a href="https://github.com/Peuvictor/filmow-insights" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+          <!-- Job Automation -->
+          <div class="col-md-6">
+            <div class="card h-100 p-3 bg-white">
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-3 text-senior-accent">Job Scraping & Automator</h3>
+                <p class="text-muted small mb-4">Pipelines de extração de dados utilizando Selenium. Focado em resiliência contra bloqueios e tratamento de dados não estruturados.</p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge badge-senior rounded-pill">Python</span>
+                  <span class="badge badge-senior rounded-pill">Selenium</span>
+                </div>
+                <div class="d-flex gap-3 mt-auto">
+                  <a href="#" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-      </div>
-    </section>
+          <!-- Filmow ML -->
+          <div class="col-md-6">
+            <div class="card h-100 p-3 bg-white">
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-3 text-senior-accent">Filmow Insights & ML</h3>
+                <p class="text-muted small mb-4">Motor de recomendação híbrido. Utiliza Nokogiri para ingestão de dados massivos e modelos em Python para clusterização de preferências.</p>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge badge-senior rounded-pill">Ruby/Nokogiri</span>
+                  <span class="badge badge-senior rounded-pill">Machine Learning</span>
+                </div>
+                <div class="d-flex gap-3 mt-auto">
+                  <a href="https://github.com/Peuvictor/filmow-insights" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- Domínio Técnico (Sem ícones genéricos, focado em conceitos) -->
-    <section id="arquitetura" class="mb-5 py-4 border-top" data-aos="fade-up">
-      <h2 class="section-title h3 text-center mb-5 mt-4">Core Competencies</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Backend & APIs</h4>
-          <ul class="list-unstyled text-secondary">
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> Ruby on Rails (Monolitos & API)</li>
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> Java & Spring Boot</li>
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> Design Patterns & Clean Code</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Data & Cloud</h4>
-          <ul class="list-unstyled text-secondary">
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> PostgreSQL & Modelagem SQL</li>
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> Python (Data Scrape & ML)</li>
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> Azure, GCP & Docker</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Workflow & Automação</h4>
-          <ul class="list-unstyled text-secondary">
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> IA Generativa / Copilot Solutions</li>
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> CI/CD Pipelines (Render/GitHub)</li>
-            <li class="mb-2"><i class="fas fa-check text-dark me-2"></i> Processamento Assíncrono</li>
-          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Contato Sóbrio -->
-    <section id="contato" class="mb-5 py-5 text-center bg-white rounded shadow-sm" data-aos="fade-up">
-      <h2 class="section-title h3 mb-3">Contato</h2>
-      <p class="text-muted mb-4">Disponível para discutir arquitetura de software, novos desafios e oportunidades.</p>
-      <div class="d-flex justify-content-center gap-4">
-        <a href="mailto:peuvictor22@gmail.com" class="text-dark text-decoration-none fs-5"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/pedro-guimaraes-dev/" target="_blank" class="text-dark text-decoration-none fs-5"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Peuvictor" target="_blank" class="text-dark text-decoration-none fs-5"><i class="fab fa-github"></i></a>
+    <!-- Domínio Técnico (Fundo Branco) -->
+    <section id="arquitetura" class="py-5 section-light border-top" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title h3 text-center mb-5">Core Competencies</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Backend & APIs</h4>
+            <ul class="list-unstyled text-secondary">
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Ruby on Rails (Monolitos & API)</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Java & Spring Boot</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Design Patterns & Clean Code</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Data & Cloud</h4>
+            <ul class="list-unstyled text-secondary">
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> PostgreSQL & Modelagem SQL</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Python (Data Scrape & ML)</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Azure, GCP & Docker</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Workflow & Automação</h4>
+            <ul class="list-unstyled text-secondary">
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> IA Generativa / Copilot</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> CI/CD Pipelines (Render/GitHub)</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Processamento Assíncrono</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato (Fundo Cinza) -->
+    <section id="contato" class="py-5 text-center section-gray border-top" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title h3 mb-3">Contato</h2>
+        <p class="text-muted mb-4">Disponível para discutir arquitetura de software e novos desafios.</p>
+        <div class="d-flex justify-content-center gap-4">
+          <a href="mailto:peuvictor22@gmail.com" class="text-dark text-decoration-none fs-4 hover-accent"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/pedro-guimaraes-dev/" target="_blank" class="text-dark text-decoration-none fs-4 hover-accent"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Peuvictor" target="_blank" class="text-dark text-decoration-none fs-4 hover-accent"><i class="fab fa-github"></i></a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="py-4 text-center border-top bg-light text-muted">
+  <!-- Rodapé Escuro -->
+  <footer class="py-4 text-center bg-senior-dark text-white">
     <div class="container">
-      <p class="small mb-0">&copy; 2026 Pedro Guimarães. Engenharia & Desenvolvimento.</p>
+      <p class="small mb-0 opacity-75">&copy; 2026 Pedro Guimarães. Engenharia & Desenvolvimento.</p>
     </div>
   </footer>
 
