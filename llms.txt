@@ -1,0 +1,27 @@
+# Pedro Victor Oliveira Guimarães
+> Software Engineer | Backend Architecture & Data Automation
+
+## Resumo Profissional
+Desenvolvedor Back-End focado na construção de aplicações escaláveis, modelagem relacional complexa e integração de IAs Generativas (LLMs) em produção. Combina o raciocínio analítico da engenharia com execução pragmática de software.
+
+## Stack Tecnológica Core
+- **Linguagens**: Ruby, Java, Python, JavaScript
+- **Frameworks e APIs**: Ruby on Rails, Spring Boot, RESTful APIs
+- **Dados e Infraestrutura**: PostgreSQL, Docker, Microsoft Azure (Functions, API Management), Render, CI/CD
+- **IA e Automação**: Integração de LLMs (Azure AI, OpenAI, Claude 3), GitHub Copilot, Web Scraping (Selenium, Nokogiri), Processamento Assíncrono (Sidekiq)
+
+## Projetos de Engenharia em Destaque
+1. **BH Agendamentos**: Marketplace SaaS multitenant. Destaque arquitetural para o controlo de concorrência na base de dados (anti-overbooking) e gestão de papéis de acesso isolados. Infraestrutura 100% contentorizada.
+2. **Alter Snack E-commerce**: Plataforma web de alta performance. Envolveu a integração de gateway de pagamento (Stripe) e orquestração de processos internos utilizando LLMs.
+3. **Filmow Insights & Scraper**: Motor de recomendação e extração massiva de dados. Implementação de fallbacks contra bloqueios de IP (Erro 403) e higienização avançada de dados.
+4. **Job Search Automator & Copilots**: Pipeline de automação inteligente e orquestração de IAs generativas como copilotos operacionais.
+
+## Localização e Disponibilidade
+- Baseado em: Belo Horizonte, MG, Brasil
+- Disponibilidade: Transição planeada para modelo híbrido/presencial em São Paulo (SP).
+
+## Contactos Oficiais
+- Email: peuvictor22@gmail.com
+- LinkedIn: https://www.linkedin.com/in/pedro-victor
+- GitHub: https://github.com/Peuvictor
+- Website: https://peuvictor.github.io

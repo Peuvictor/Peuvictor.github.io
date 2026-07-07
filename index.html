@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Guimarães | Software Engineer</title>
+  <title>Pedro Victor | Software Engineer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -28,11 +28,10 @@
 </head>
 <body class="text-dark">
 
-  <!-- Header com Contraste Forte -->
   <header class="py-5 bg-senior-dark text-white border-bottom border-secondary">
     <div class="container text-center py-4" data-aos="fade-in">
-      <img src="imagens/minha-foto.jpg" alt="Pedro Guimarães" class="img-fluid rounded-circle mb-4 border border-3 border-secondary shadow" style="width: 150px; height: 150px; object-fit: cover;">
-      <h1 class="display-5 fw-bold mb-2">Pedro Guimarães</h1>
+      <img src="imagens/minha-foto.jpg" alt="Pedro Victor Guimarães" class="img-fluid rounded-circle mb-4 border border-3 border-secondary shadow" style="width: 150px; height: 150px; object-fit: cover;">
+      <h1 class="display-5 fw-bold mb-2">Pedro Victor Guimarães</h1>
       <p class="lead text-light mb-4 opacity-75">Software Engineer | Backend Architecture & Data Automation</p>
       <nav class="nav justify-content-center gap-3">
         <a class="nav-link text-white fw-semibold" href="#sobre">Sobre</a>
@@ -44,92 +43,89 @@
   </header>
 
   <main>
-    <!-- Seção Sobre (Fundo Branco) -->
     <section id="sobre" class="py-5 section-light" data-aos="fade-up">
       <div class="container row justify-content-center mx-auto">
         <div class="col-lg-8 text-center">
           <h2 class="section-title h3 mb-4">Engenharia orientada a resultados</h2>
           <p class="text-secondary fs-5 lh-lg">
-            Desenvolvedor com sólida base analítica, focado em construir sistemas escaláveis e automatizar processos complexos. Minha stack principal transita entre o ecossistema <strong>Ruby on Rails</strong> para agilidade e <strong>Java/Spring Boot</strong> para soluções robustas.
+            Desenvolvedor com base analítica em Engenharia, focado em construir aplicações escaláveis, modelagem relacional complexa e automação. Minha stack transita entre o ecossistema <strong>Ruby on Rails</strong> para agilidade e <strong>Java/Spring Boot</strong> para arquiteturas robustas.
             <br><br>
-            Integro rotinas de <strong>Machine Learning (Python)</strong> e aproveito infraestrutura cloud (Azure/GCP) para entregar software resiliente.
+            Integro rotinas de extração de dados <strong>(Python)</strong>, orquestração de <strong>IAs Generativas (LLMs)</strong> em produção e infraestrutura cloud (Azure/Docker) para entregar software resiliente e voltado ao impacto no negócio.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Projetos (Fundo Cinza Suave) -->
     <section id="projetos" class="py-5 section-gray" data-aos="fade-up">
       <div class="container">
-        <h2 class="section-title h3 text-center mb-5">Arquitetura & Projetos</h2>
+        <h2 class="section-title h3 text-center mb-5">Estudos de Caso & Projetos</h2>
         <div class="row g-4">
 
-          <!-- Agendamentos BH -->
           <div class="col-md-6">
             <div class="card h-100 p-3 bg-white">
-              <div class="card-body">
-                <h3 class="h5 fw-bold mb-3 text-senior-accent">Agendamentos BH SaaS</h3>
-                <p class="text-muted small mb-4">Marketplace multitenant com arquitetura conteinerizada. Gerencia conflitos de concorrência em tempo real para múltiplos prestadores.</p>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 fw-bold mb-3 text-senior-accent">BH Agendamentos (SaaS)</h3>
+                <p class="text-muted small mb-4">Marketplace multitenant com arquitetura 100% conteinerizada. Destaque para o controle de concorrência no banco de dados (anti-overbooking) e refatoração de regras de negócio para separação rígida de perfis de acesso.</p>
                 <div class="d-flex flex-wrap gap-2 mb-4">
                   <span class="badge badge-senior rounded-pill">Ruby on Rails</span>
                   <span class="badge badge-senior rounded-pill">PostgreSQL</span>
                   <span class="badge badge-senior rounded-pill">Docker</span>
                 </div>
                 <div class="d-flex gap-3 mt-auto">
-                  <a href="https://bh-agendamentos.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Ver Produção &rarr;</a>
+                  <a href="https://bh-agendamentos.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Live Demo &rarr;</a>
                   <a href="https://github.com/Peuvictor/bh_agendamentos" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Alter Snack -->
           <div class="col-md-6">
             <div class="card h-100 p-3 bg-white">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h3 class="h5 fw-bold mb-3 text-senior-accent">Alter Snack E-commerce</h3>
-                <p class="text-muted small mb-4">Integração de gateway de pagamento (Stripe) e processamento de linguagem natural (ChatGPT API) para curadoria de receitas.</p>
+                <p class="text-muted small mb-4">Plataforma web construída com foco em performance. Envolveu a integração de gateway de pagamento (Stripe) e orquestração de processos internos utilizando LLMs.</p>
                 <div class="d-flex flex-wrap gap-2 mb-4">
-                  <span class="badge badge-senior rounded-pill">Rails API</span>
+                  <span class="badge badge-senior rounded-pill">Ruby on Rails</span>
                   <span class="badge badge-senior rounded-pill">Stripe Webhooks</span>
                   <span class="badge badge-senior rounded-pill">OpenAI SDK</span>
                 </div>
                 <div class="d-flex gap-3 mt-auto">
-                  <a href="https://altersnack.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Ver Produção &rarr;</a>
-                  <a href="https://github.com/MatEstevam/altersnack" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+                  <a href="https://altersnack.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Live Demo &rarr;</a>
+                  <a href="https://github.com/Peuvictor/altersnack" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Job Automation -->
           <div class="col-md-6">
             <div class="card h-100 p-3 bg-white">
-              <div class="card-body">
-                <h3 class="h5 fw-bold mb-3 text-senior-accent">Job Scraping & Automator</h3>
-                <p class="text-muted small mb-4">Pipelines de extração de dados utilizando Selenium. Focado em resiliência contra bloqueios e tratamento de dados não estruturados.</p>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 fw-bold mb-3 text-senior-accent">Job Search Automator & Copilots</h3>
+                <p class="text-muted small mb-4">Pipeline de automação inteligente. Parseamento dinâmico de DOM, resiliência contra bloqueios na coleta de dados e criação de fluxos utilizando IAs generativas como copilotos operacionais.</p>
                 <div class="d-flex flex-wrap gap-2 mb-4">
                   <span class="badge badge-senior rounded-pill">Python</span>
                   <span class="badge badge-senior rounded-pill">Selenium</span>
+                  <span class="badge badge-senior rounded-pill">Azure AI</span>
                 </div>
                 <div class="d-flex gap-3 mt-auto">
-                  <a href="#" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
+                  <a href="#" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Filmow ML -->
           <div class="col-md-6">
             <div class="card h-100 p-3 bg-white">
-              <div class="card-body">
-                <h3 class="h5 fw-bold mb-3 text-senior-accent">Filmow Insights & ML</h3>
-                <p class="text-muted small mb-4">Motor de recomendação híbrido. Utiliza Nokogiri para ingestão de dados massivos e modelos em Python para clusterização de preferências.</p>
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 fw-bold mb-3 text-senior-accent">Filmow Insights & Scraper</h3>
+                <p class="text-muted small mb-4">Motor de recomendação e dashboard cinematográfico. Implementação de fallbacks eficientes para contornar bloqueios de IP (Erro 403) na extração massiva de dados, com rotinas avançadas de higienização.</p>
                 <div class="d-flex flex-wrap gap-2 mb-4">
                   <span class="badge badge-senior rounded-pill">Ruby/Nokogiri</span>
+                  <span class="badge badge-senior rounded-pill">PostgreSQL</span>
                   <span class="badge badge-senior rounded-pill">Machine Learning</span>
                 </div>
                 <div class="d-flex gap-3 mt-auto">
+                  <a href="https://filmow-insights.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Live Demo &rarr;</a>
                   <a href="https://github.com/Peuvictor/filmow-insights" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
                 </div>
               </div>
@@ -140,10 +136,9 @@
       </div>
     </section>
 
-    <!-- Domínio Técnico (Fundo Branco) -->
     <section id="arquitetura" class="py-5 section-light border-top" data-aos="fade-up">
       <div class="container">
-        <h2 class="section-title h3 text-center mb-5">Core Competencies</h2>
+        <h2 class="section-title h3 text-center mb-5">Stack Tecnológica</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Backend & APIs</h4>
@@ -154,44 +149,42 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Data & Cloud</h4>
+            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Data, Cloud & DevOps</h4>
             <ul class="list-unstyled text-secondary">
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> PostgreSQL & Modelagem SQL</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Python (Data Scrape & ML)</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Azure, GCP & Docker</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> PostgreSQL & SQL</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Microsoft Azure & Render</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Docker & GitHub Actions</li>
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Workflow & Automação</h4>
+            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Workflow, AI & Automação</h4>
             <ul class="list-unstyled text-secondary">
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> IA Generativa / Copilot</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> CI/CD Pipelines (Render/GitHub)</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Processamento Assíncrono</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Python (Data Scrape & automação)</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Integração de LLMs (Azure AI, OpenAI)</li>
+              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Processamento Assíncrono (Sidekiq)</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contato (Fundo Cinza) -->
     <section id="contato" class="py-5 text-center section-gray border-top" data-aos="fade-up">
       <div class="container">
         <h2 class="section-title h3 mb-3">Contato</h2>
-        <p class="text-muted mb-4">Disponível para discutir arquitetura de software e novos desafios.</p>
+        <p class="text-muted mb-4">Disponível para discutir arquitetura de software e novas oportunidades.</p>
         <div class="d-flex justify-content-center gap-4">
-          <a href="mailto:peuvictor22@gmail.com" class="text-dark text-decoration-none fs-4 hover-accent"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/pedro-guimaraes-dev/" target="_blank" class="text-dark text-decoration-none fs-4 hover-accent"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Peuvictor" target="_blank" class="text-dark text-decoration-none fs-4 hover-accent"><i class="fab fa-github"></i></a>
+          <a href="mailto:peuvictor22@gmail.com" class="text-dark text-decoration-none fs-4 hover-accent" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/pedro-victor" target="_blank" class="text-dark text-decoration-none fs-4 hover-accent" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Peuvictor" target="_blank" class="text-dark text-decoration-none fs-4 hover-accent" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Rodapé Escuro -->
   <footer class="py-4 text-center bg-senior-dark text-white">
     <div class="container">
-      <p class="small mb-0 opacity-75">&copy; 2026 Pedro Guimarães. Engenharia & Desenvolvimento.</p>
+      <p class="small mb-0 opacity-75">&copy; 2026 Pedro Victor Guimarães. Engenharia & Desenvolvimento.</p>
     </div>
   </footer>
 
