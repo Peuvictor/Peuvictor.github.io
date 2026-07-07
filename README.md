@@ -1,55 +1,67 @@
-# 💻 Pedro Guimarães | Software Engineer
+# Pedro Victor Oliveira Guimarães | Desenvolvedor Back-End
+📍 Belo Horizonte, MG | [LinkedIn](https://www.linkedin.com/in/pedro-guimaraes-dev/) | [peuvictor22@gmail.com](mailto:peuvictor22@gmail.com)
 
-Desenvolvedor focado em eficiência e automação, unindo o raciocínio analítico da Engenharia à agilidade do desenvolvimento moderno. Especialista na construção de aplicações escaláveis com **Ruby on Rails** e atualmente expandindo minha stack para **Java (Spring Boot)** e infraestrutura Cloud.
-
-Tenho forte atuação em extração de dados e automação de processos utilizando **Python**, integrando fluxos de trabalho com IA e conteinerização.
-
-📍 Belo Horizonte, MG | 🎓 ADS (Unicesumar)
+Desenvolvedor Back-End especializado em **Ruby on Rails**, **Java (Spring Boot)** e ecossistemas **Cloud/Serverless**. Foco na criação de aplicações escaláveis, modelagem relacional complexa e integração de **IAs Generativas (LLMs)** em produção. Combino raciocínio analítico da Engenharia de Mobilidade com experiência pragmática em gestão para entregar arquiteturas de software resilientes e voltadas para o impacto no negócio.
 
 ---
 
-## 🚀 Projetos em Destaque
+## 💼 Experiência Profissional
 
-### 🗓️ [Agendamentos BH (SaaS)](https://github.com/Peuvictor/bh_agendamentos)
-Marketplace multitenant focado em prestadores de serviços locais.
-* **Arquitetura & Desafios:** Sistema desenhado para lidar com concorrência de horários e múltiplos perfis de acesso. Ambiente de desenvolvimento e produção 100% conteinerizado.
-* **Tech Stack:** Ruby on Rails, PostgreSQL, Docker, Render.
-* **Live Demo:** [Agendamentos BH Online](https://bh-agendamentos.onrender.com/)
+### Desenvolvedor Back-End Autônomo | BH Agendamentos
+*Agosto 2024 – Atual*
+* Arquitetura e desenvolvimento de um marketplace SaaS multitenant para prestadores de serviços locais.
+* **Desafio Técnico:** Implementação de controlo de concorrência na base de dados (**PostgreSQL**) para criar um sistema robusto anti-overbooking.
+* **Arquitetura de Acesso:** Refatoração completa da UI/UX e das regras de negócio para garantir separação rígida de papéis, removendo controlos e botões de nível administrativo das rotas de utilizadores finais.
+* **Infraestrutura:** Gestão de ambiente de desenvolvimento e produção 100% contentorizado via **Docker** com deploy na plataforma **Render**.
 
-### 🤖 Job Search Automator
-Pipeline de automação inteligente para busca de vagas e coleta de requisitos, otimizando processos de recrutamento e análise de mercado.
-* **Arquitetura & Desafios:** Parseamento de DOM dinâmico, resiliência contra bloqueios e estruturação de dados para análise de carreira.
-* **Tech Stack:** Python, Selenium, Data Pipelines.
-
-### 🎬 [Filmow Insights & ML](https://github.com/Peuvictor/filmow-insights)
-Motor de recomendação e dashboard cinematográfico alimentado por extração massiva de dados.
-* **Arquitetura & Desafios:** Implementação de fallback para contornar bloqueios de IP (Erro 403) em produção. Tratamento de encoding UTF-8 complexo e integração com modelos preditivos para indicação de filmes.
-* **Tech Stack:** Ruby (Nokogiri), Python (Machine Learning), PostgreSQL.
-* **Live Demo:** [Filmow Insights Online](https://filmow-insights.onrender.com/)
+### Desenvolvedor Web Full Stack | Alter Snack & Footwear
+*Abril 2024 – Agosto 2024*
+* Manutenção e evolução de plataformas de e-commerce construídas em **Ruby on Rails**.
+* Integração de gateways de pagamento (**Stripe**) e orquestração de **LLMs** para automação de processos internos.
+* Atuação em equipas ágeis com foco em entregas orientadas ao produto e performance de base de dados.
 
 ---
 
-## 🛠️ Core Competencies
+## 🚀 Casos de Estudo & Projetos em Destaque
 
-* **Backend & APIs:** Ruby on Rails, Java / Spring Boot, RESTful APIs.
-* **Data & Automação:** PostgreSQL, Python, Web Scraping (Selenium/Nokogiri), Machine Learning básico.
-* **Cloud & DevOps:** Docker, Microsoft Azure, Google Cloud (GCP), GitHub Actions, Render.
-* **Workflow:** Integração de IA Generativa (Copilot/OpenAI), TDD, Clean Code.
+### 🎬 Filmow Insights & Scraper
+Motor de recomendação e extração massiva de dados cinematográficos.
+* **Arquitetura & Desafios:** Construção de rotinas de higienização de dados e tratamento de encoding UTF-8. Implementação de fallbacks eficientes no scraper (**Nokogiri/Ruby**) para contornar bloqueios de IP (Erro 403) em produção.
+* **Stack:** Ruby, Python (Machine Learning básico), PostgreSQL.
+* 🔗 [Live Demo](https://filmow-insights.onrender.com/) | [Repositório](https://github.com/Peuvictor/filmow-insights)
+
+### 🤖 Job Search Automator & Copilots Library
+Pipeline de automação inteligente e orquestração de assistentes de IA para otimização de rotinas.
+* **Arquitetura & Desafios:** Parseamento dinâmico de DOM e resiliência contra bloqueios na recolha de requisitos do mercado. Criação de fluxos utilizando IAs generativas como copilotos de operação.
+* **Stack:** Python, Selenium, Azure AI.
+* 🔗 [Repositório](https://github.com/Peuvictor/vagas-hunter-ai)
+
+---
+
+## 🛠️ Stack Tecnológica
+
+* **Linguagens:** Ruby, Java, Python, JavaScript.
+* **Frameworks & APIs:** Ruby on Rails, Spring Boot, RESTful APIs.
+* **Base de Dados & Mensageria:** PostgreSQL, SQL, Azure Service Bus.
+* **Cloud & DevOps:** Microsoft Azure (Functions, API Management), Google Cloud Platform (GCP), Docker, CI/CD, Render, GitHub Actions.
+* **IA & Ferramentas:** Integração de LLMs (Claude 3, OpenAI, Gemini), Azure AI Foundry, GitHub Copilot.
 
 ---
 
-## 🎓 Formação & Especializações
+## 🎓 Formação & Certificações de Destaque
 
-* **Análise e Desenvolvimento de Sistemas** – UNICESUMAR (Em andamento)
-* **Bootcamp Cloud & AI** – Microsoft Azure & Copilot / Google Cloud (Concluindo)
-* **Bootcamp Web Development** – Le Wagon (Concluído)
+**Educação**
+* **Análise e Desenvolvimento de Sistemas (ADS)** – UniCesumar (2026 - Em andamento)
+* **Engenharia de Mobilidade** – UNIFEI (2015 – 2020)
 
----
+**Engenharia de IA & Copilotos**
+* GitHub Copilot & Azure Serverless na Prática (Microsoft)
+* Dominando IA Generativa com Claude 3 no Amazon Bedrock
+* Agentes Autônomos em Ação: Produtividade Real com Microsoft AI Agent Service
+* Do Zero ao Agente: Pipeline Inteligente no Azure AI Foundry
 
-## 📫 Contato & Redes
-
-* **LinkedIn:** [linkedin.com/in/pedro-guimaraes-dev](https://www.linkedin.com/in/pedro-guimaraes-dev/)
-* **Email:** [peuvictor22@gmail.com](mailto:peuvictor22@gmail.com)
-
----
-*Engenharia orientada a resultados.*
+**Cloud, Arquitetura & Backend**
+* Azure para Backend: Construindo APIs escaláveis e resilientes
+* Fundamentos da Arquitetura Serverless com Azure Functions & API Management
+* Fundamentos de Desenvolvimento Java (Herança, Polimorfismo, Encapsulamento)
+* Do Código à Produção: Docker, CI/CD e NoSQL
