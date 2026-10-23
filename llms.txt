@@ -1,27 +1,25 @@
 # Pedro Victor Oliveira Guimarães
-> Software Engineer | Backend Architecture & Data Automation
+> Desenvolvedor de software em Belo Horizonte, Brasil. Portfólio: https://peuvictor.github.io/
 
-## Resumo Profissional
-Desenvolvedor Back-End focado na construção de aplicações escaláveis, modelagem relacional complexa e integração de IAs Generativas (LLMs) em produção. Combina o raciocínio analítico da engenharia com execução pragmática de software.
+## Perfil
+Desenvolve aplicações web, APIs e automações em Ruby on Rails, Java/Spring Boot e React. Graduando em Análise e Desenvolvimento de Sistemas na UniCesumar; concluiu o bootcamp Full Stack do Le Wagon.
 
-## Stack Tecnológica Core
-- **Linguagens**: Ruby, Java, Python, JavaScript
-- **Frameworks e APIs**: Ruby on Rails, Spring Boot, RESTful APIs
-- **Dados e Infraestrutura**: PostgreSQL, Docker, Microsoft Azure (Functions, API Management), Render, CI/CD
-- **IA e Automação**: Integração de LLMs (Azure AI, OpenAI, Claude 3), GitHub Copilot, Web Scraping (Selenium, Nokogiri), Processamento Assíncrono (Sidekiq)
+## Projetos
+- BH Agendamentos — marketplace de serviços com agenda, pagamentos e controles de disponibilidade. https://github.com/Peuvictor/bh_agendamentos
+- DIO Budgeting Gemini — assistente financeiro com áudio, Spring AI, Gemini e PostgreSQL. https://github.com/Peuvictor/dio-budgeting-gemini
+- Alter Snack — plataforma de alimentos para restrições alimentares, com receitas integradas à OpenAI. Participação em equipe. https://github.com/MatEstevam/altersnack
+- OrderFlow — API de produtos em Java/Spring Boot, em desenvolvimento para pedidos e estoque. https://github.com/Peuvictor/orderflow
+- FutWear — marketplace de camisas de futebol em Ruby on Rails. https://github.com/Peuvictor/rails-marketplace
+- GitHub Wiki — catálogo de repositórios em React. https://github.com/Peuvictor/github-wiki
+- Sudoku Java — jogo com interface Swing. https://github.com/Peuvictor/sudoku-java-dio
+- Filme Catalog API — catálogo integrado à OMDb. https://github.com/Peuvictor/filmecatalog
+- Calculadora React — calculadora com useReducer. https://github.com/Peuvictor/calculadora-react
+- Curador de Cinema AI — curadoria com Filmow, TMDB e Gemini. https://github.com/Peuvictor/curador-cinema-ai
+- Vagas Hunter AI — busca e análise de vagas com alertas pelo Telegram. https://github.com/Peuvictor/vagas-hunter-ai
+- Copilots Library — instruções de assistentes para desenvolvimento Rails. https://github.com/Peuvictor/copilots-library
+- VibeFinance — protótipo de gestão financeira orientada por conversa. https://github.com/Peuvictor/dio-lab-vibe-coding-app-financas
 
-## Projetos de Engenharia em Destaque
-1. **BH Agendamentos**: Marketplace SaaS multitenant. Destaque arquitetural para o controlo de concorrência na base de dados (anti-overbooking) e gestão de papéis de acesso isolados. Infraestrutura 100% contentorizada.
-2. **Alter Snack E-commerce**: Plataforma web de alta performance. Envolveu a integração de gateway de pagamento (Stripe) e orquestração de processos internos utilizando LLMs.
-3. **Filmow Insights & Scraper**: Motor de recomendação e extração massiva de dados. Implementação de fallbacks contra bloqueios de IP (Erro 403) e higienização avançada de dados.
-4. **Job Search Automator & Copilots**: Pipeline de automação inteligente e orquestração de IAs generativas como copilotos operacionais.
-
-## Localização e Disponibilidade
-- Baseado em: Belo Horizonte, MG, Brasil
-- Disponibilidade: Transição planeada para modelo híbrido/presencial em São Paulo (SP).
-
-## Contactos Oficiais
-- Email: peuvictor22@gmail.com
-- LinkedIn: https://www.linkedin.com/in/pedro-victor
+## Contato
+- E-mail: peuvictor22@gmail.com
+- LinkedIn: https://www.linkedin.com/in/pedro-guimaraes-dev/
 - GitHub: https://github.com/Peuvictor
-- Website: https://peuvictor.github.io
