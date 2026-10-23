@@ -1,197 +1,115 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedro Victor | Software Engineer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; background-color: #f4f6f8; }
-
-    /* Contraste Elegante (Azul Escuro Corporativo) */
-    .bg-senior-dark { background-color: #0b1c2d; }
-    .text-senior-accent { color: #2a69ac; }
-
-    .badge-senior { background-color: #e2e8f0; color: #334155; font-weight: 600; }
-    .section-title { font-weight: 700; letter-spacing: -0.5px; color: #0b1c2d; }
-
-    .card { border-radius: 12px; transition: transform 0.2s ease-in-out, box-shadow 0.2s; border: 1px solid #e2e8f0; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-
-    /* Alternância de seções para quebrar o branco */
-    .section-light { background-color: #ffffff; }
-    .section-gray { background-color: #f8fafc; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101713">
+  <meta name="description" content="Portfólio de Pedro Victor Guimarães. Projetos em Ruby on Rails, Java e Spring Boot, React, automação e inteligência artificial.">
+  <meta property="og:title" content="Pedro Victor Guimarães — Desenvolvedor de Software">
+  <meta property="og:description" content="Produtos web, APIs e automações. Conheça meus projetos em Rails, Java, React e IA.">
+  <meta property="og:type" content="website">
+  <title>Pedro Victor Guimarães — Desenvolvedor de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="text-dark">
-
-  <header class="py-5 bg-senior-dark text-white border-bottom border-secondary">
-    <div class="container text-center py-4" data-aos="fade-in">
-      <img src="imagens/minha-foto.jpg" alt="Pedro Victor Guimarães" class="img-fluid rounded-circle mb-4 border border-3 border-secondary shadow" style="width: 150px; height: 150px; object-fit: cover;">
-      <h1 class="display-5 fw-bold mb-2">Pedro Victor Guimarães</h1>
-      <p class="lead text-light mb-4 opacity-75">Software Engineer | Backend Architecture & Data Automation</p>
-      <nav class="nav justify-content-center gap-3">
-        <a class="nav-link text-white fw-semibold" href="#sobre">Sobre</a>
-        <a class="nav-link text-white fw-semibold" href="#projetos">Projetos</a>
-        <a class="nav-link text-white fw-semibold" href="#arquitetura">Expertise</a>
-        <a class="nav-link text-white fw-semibold" href="#contato">Contato</a>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="wordmark" href="#inicio" aria-label="Pedro Victor, voltar ao início">PV<span class="mark-dot">.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+        <a class="nav-github" href="https://github.com/Peuvictor" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="sobre" class="py-5 section-light" data-aos="fade-up">
-      <div class="container row justify-content-center mx-auto">
-        <div class="col-lg-8 text-center">
-          <h2 class="section-title h3 mb-4">Engenharia orientada a resultados</h2>
-          <p class="text-secondary fs-5 lh-lg">
-            Desenvolvedor com base analítica em Engenharia, focado em construir aplicações escaláveis, modelagem relacional complexa e automação. Minha stack transita entre o ecossistema <strong>Ruby on Rails</strong> para agilidade e <strong>Java/Spring Boot</strong> para arquiteturas robustas.
-            <br><br>
-            Integro rotinas de extração de dados <strong>(Python)</strong>, orquestração de <strong>IAs Generativas (LLMs)</strong> em produção e infraestrutura cloud (Azure/Docker) para entregar software resiliente e voltado ao impacto no negócio.
-          </p>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="status-dot"></span> DESENVOLVEDOR DE SOFTWARE · BELO HORIZONTE, BR</p>
+          <h1 id="hero-title">Ideias viram<br><em>produto.</em><br>Desafios viram<br><span class="outlined">código.</span></h1>
+          <p class="hero-lead">Desenvolvo aplicações web, APIs e automações com <strong>Ruby on Rails, Java/Spring Boot e React</strong>. Gosto de transformar regras complexas em experiências simples de usar.</p>
+          <div class="hero-actions"><a class="button button-accent" href="#projetos">Explorar projetos <span aria-hidden="true">↘</span></a><a class="text-link" href="mailto:peuvictor22@gmail.com">Vamos conversar <span aria-hidden="true">↗</span></a></div>
         </div>
+        <div class="hero-visual" aria-label="Foto de Pedro Victor Guimarães">
+          <div class="portrait-frame"><img src="imagens/minha-foto.jpg" alt="Retrato de Pedro Victor Guimarães" width="360" height="360" fetchpriority="high"></div>
+          <div class="hero-stamp" aria-hidden="true">BUILD<br>LEARN<br>SHIP <span>✳</span></div>
+          <span class="hero-caption">PORTFÓLIO / 2026</span>
+        </div>
+      </div>
+      <div class="wrap hero-bottom"><span>01 — TRABALHO SELECIONADO</span><span>ROLE PARA EXPLORAR ↓</span></div>
+    </section>
+
+    <section class="work-section" id="projetos" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">O QUE EU CONSTRUÍ</p><h2 id="projects-title">Projetos<span class="accent">.</span></h2></div><p>Do produto completo ao experimento técnico: cada projeto conta uma parte da minha trajetória.</p></div>
+        <div class="filters" role="group" aria-label="Filtrar projetos">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Todos <span>13</span></button>
+          <button class="filter" type="button" data-filter="rails" aria-pressed="false">Rails</button>
+          <button class="filter" type="button" data-filter="java" aria-pressed="false">Java</button>
+          <button class="filter" type="button" data-filter="react" aria-pressed="false">React</button>
+          <button class="filter" type="button" data-filter="ai" aria-pressed="false">IA & automação</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card feature" data-category="rails">
+            <div class="project-media media-bh"><img src="https://raw.githubusercontent.com/Peuvictor/bh_agendamentos/main/docs/screenshots/desktop-vitrine.png" alt="Tela da vitrine de serviços do BH Agendamentos" loading="lazy"><span class="media-label">PLATAFORMA WEB / RAILS</span></div>
+            <div class="project-content"><p class="project-number">01 / PROJETO AUTORAL</p><h3>BH Agendamentos</h3><p>Marketplace de serviços locais com agenda de prestadores, reserva de horários e pagamentos por cartão e PIX. O cálculo de disponibilidade considera turnos, duração dos serviços e bloqueios para evitar conflitos.</p><div class="tags"><span>Ruby on Rails</span><span>PostgreSQL</span><span>Mercado Pago</span><span>Sidekiq</span></div><div class="project-links"><a href="https://github.com/Peuvictor/bh_agendamentos" target="_blank" rel="noopener noreferrer">Ver código ↗</a><a href="https://bh-agendamentos.onrender.com/" target="_blank" rel="noopener noreferrer">Demonstração ↗</a></div></div>
+          </article>
+          <article class="project-card feature" data-category="java ai">
+            <div class="project-media media-gemini"><div class="visual-word"><span class="visual-kicker">ÁUDIO → INTENÇÃO → AÇÃO</span><strong>Finanças<br>com voz<span>.</span></strong><div class="audio-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="media-label">API + INTELIGÊNCIA ARTIFICIAL</span></div>
+            <div class="project-content"><p class="project-number">02 / BACK-END + IA</p><h3>DIO Budgeting Gemini</h3><p>Assistente financeiro que recebe áudio, usa Gemini para interpretar comandos, registra ou consulta transações no PostgreSQL e devolve uma resposta em voz.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>Spring AI</span><span>Gemini</span></div><div class="project-links"><a href="https://github.com/Peuvictor/dio-budgeting-gemini" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a></div></div>
+          </article>
+          <article class="project-card" data-category="rails ai">
+            <div class="project-media media-screenshot media-alter"><img src="imagens/alter-snack.jpg" alt="Tela do Alter Snack com restaurantes e filtros de restrições alimentares" loading="lazy"><span class="media-label">E-COMMERCE / RAILS</span></div>
+            <div class="project-content"><p class="project-number">03 / DESENVOLVIMENTO EM EQUIPE</p><h3>Alter Snack</h3><p>Plataforma de alimentos para pessoas com restrições alimentares. Participei do desenvolvimento do catálogo, compras e receitas geradas com a API da OpenAI.</p><div class="tags"><span>Rails</span><span>Stripe</span><span>OpenAI API</span></div><div class="project-links"><a href="https://github.com/MatEstevam/altersnack" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div>
+          </article>
+          <article class="project-card" data-category="java">
+            <div class="project-media media-order"><div class="order-visual" aria-hidden="true"><span>ORDER / 001</span><div>RESERVED <b>●</b></div><small>products → inventory → orders</small></div><span class="media-label">API REST / EM DESENVOLVIMENTO</span></div>
+            <div class="project-content"><p class="project-number">04 / SISTEMAS E TESTES</p><h3>OrderFlow</h3><p>API de produtos em Java com regras de SKU, validações, PostgreSQL e Flyway. Evolui por TDD para pedidos, reservas temporárias e estoque.</p><div class="tags"><span>Java 25</span><span>Spring Boot</span><span>JUnit 5</span><span>Docker</span></div><div class="project-links"><a href="https://github.com/Peuvictor/orderflow" target="_blank" rel="noopener noreferrer">Acompanhar projeto ↗</a></div></div>
+          </article>
+          <article class="project-card" data-category="rails">
+            <div class="project-media media-screenshot media-fut"><img src="imagens/futwear.jpg" alt="Tela do marketplace FutWear com busca e catálogo de camisas de futebol" loading="lazy"><span class="media-label">MARKETPLACE / RAILS</span></div>
+            <div class="project-content"><p class="project-number">05 / E-COMMERCE</p><h3>FutWear</h3><p>Marketplace de camisas de futebol com catálogo, anúncios, busca de produtos e fluxo de compras. Projeto desenvolvido no ecossistema Rails.</p><div class="tags"><span>Ruby on Rails</span><span>PostgreSQL</span><span>Devise</span></div><div class="project-links"><a href="https://github.com/Peuvictor/rails-marketplace" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div>
+          </article>
+          <article class="project-card" data-category="react">
+            <div class="project-media media-screenshot media-wiki"><img src="https://raw.githubusercontent.com/Peuvictor/github-wiki/main/public/preview.jpg" alt="Prévia visual do aplicativo GitHub Wiki" loading="lazy"><span class="media-label">FRONT-END / REACT</span></div>
+            <div class="project-content"><p class="project-number">06 / INTERFACE E API</p><h3>GitHub Wiki</h3><p>Busque repositórios pela API do GitHub e organize uma lista pessoal com persistência local. Construído com React 19, Vite e Tailwind CSS.</p><div class="tags"><span>React 19</span><span>GitHub API</span><span>Vite</span></div><div class="project-links"><a href="https://github.com/Peuvictor/github-wiki" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div>
+          </article>
+          <article class="project-card compact" data-category="java">
+            <div class="project-media media-screenshot media-sudoku"><img src="https://raw.githubusercontent.com/Peuvictor/sudoku-java-dio/main/docs/images/sudoku-tabuleiro.png" alt="Interface gráfica do jogo Sudoku em Java" loading="lazy"></div><div class="project-content"><p class="project-number">07 / JAVA</p><h3>Sudoku Java</h3><p>Jogo com interface Swing, navegação por teclado, cronômetro e verificação do tabuleiro.</p><div class="tags"><span>Java</span><span>Swing</span></div><div class="project-links"><a href="https://github.com/Peuvictor/sudoku-java-dio" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div>
+          </article>
+          <article class="project-card compact" data-category="java">
+            <div class="project-media media-film"><span class="media-art" aria-hidden="true">FILM<span>↗</span><br>CATALOG</span></div><div class="project-content"><p class="project-number">08 / JAVA</p><h3>Filme Catalog API</h3><p>Catálogo integrado à OMDb, com OpenFeign, PostgreSQL e padrões Facade e Strategy.</p><div class="tags"><span>Spring Boot</span><span>OpenFeign</span></div><div class="project-links"><a href="https://github.com/Peuvictor/filmecatalog" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div>
+          </article>
+          <article class="project-card compact" data-category="react">
+            <div class="project-media media-calculator"><div class="calc-art" aria-hidden="true"><span>08 × 12</span><strong>96</strong><div><i>AC</i><i>±</i><i>%</i><i>÷</i></div></div></div><div class="project-content"><p class="project-number">09 / REACT</p><h3>Calculadora React</h3><p>Calculadora com lógica isolada, estado em <code>useReducer</code>, operações encadeadas e suporte a teclado.</p><div class="tags"><span>React</span><span>JavaScript</span></div><div class="project-links"><a href="https://github.com/Peuvictor/calculadora-react" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div>
+          </article>
+          <article class="project-card compact" data-category="ai">
+            <div class="project-media media-cinema"><span class="media-art" aria-hidden="true">CINEMA<br><span>CURADO</span> ✳</span></div><div class="project-content"><p class="project-number">10 / RUBY + IA</p><h3>Curador de Cinema AI</h3><p>Combina histórico do Filmow, dados do TMDB e Gemini para recomendar filmes ainda não vistos.</p><div class="tags"><span>Ruby</span><span>Nokogiri</span><span>Gemini</span></div><div class="project-links"><a href="https://github.com/Peuvictor/curador-cinema-ai" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div>
+          </article>
+          <article class="project-card compact" data-category="ai">
+            <div class="project-media media-jobs"><span class="media-art" aria-hidden="true">MATCH<span class="job-star">✳</span><br>DE VAGAS</span></div><div class="project-content"><p class="project-number">11 / AUTOMAÇÃO</p><h3>Vagas Hunter AI</h3><p>Busca vagas de nível júnior, filtra senioridade, analisa compatibilidade com Gemini e envia alertas pelo Telegram.</p><div class="tags"><span>Ruby</span><span>Scraping</span><span>Gemini</span></div><div class="project-links"><a href="https://github.com/Peuvictor/vagas-hunter-ai" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></div>
+          </article>
+          <article class="project-card compact" data-category="ai">
+            <div class="project-media media-copilot"><span class="media-art" aria-hidden="true"><small>DON · ATLAS · MIRA · DORA</small><br>AI / LAB</span></div><div class="project-content"><p class="project-number">12 / FERRAMENTAS DE IA</p><h3>Copilots Library</h3><p>Biblioteca de instruções para quatro assistentes de planejamento, código, diagnóstico e estudos em Rails.</p><div class="tags"><span>Prompts</span><span>Ruby on Rails</span></div><div class="project-links"><a href="https://github.com/Peuvictor/copilots-library" target="_blank" rel="noopener noreferrer">Explorar biblioteca ↗</a></div></div>
+          </article>
+          <article class="project-card compact" data-category="ai">
+            <div class="project-media media-vibe"><span class="media-art" aria-hidden="true">VIBE<br>FINANCE<span>↗</span></span></div><div class="project-content"><p class="project-number">13 / PROTÓTIPO</p><h3>VibeFinance</h3><p>Conceito de app financeiro orientado por conversa, com registro de gastos, relatórios e metas.</p><div class="tags"><span>Protótipo</span><span>IA</span><span>PRD</span></div><div class="project-links"><a href="https://github.com/Peuvictor/dio-lab-vibe-coding-app-financas" target="_blank" rel="noopener noreferrer">Ver estudo ↗</a></div></div>
+          </article>
+        </div>
+        <p class="filter-empty" hidden>Nenhum projeto nesta categoria.</p>
       </div>
     </section>
 
-    <section id="projetos" class="py-5 section-gray" data-aos="fade-up">
-      <div class="container">
-        <h2 class="section-title h3 text-center mb-5">Estudos de Caso & Projetos</h2>
-        <div class="row g-4">
-
-          <div class="col-md-6">
-            <div class="card h-100 p-3 bg-white">
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5 fw-bold mb-3 text-senior-accent">BH Agendamentos (SaaS)</h3>
-                <p class="text-muted small mb-4">Marketplace multitenant com arquitetura 100% conteinerizada. Destaque para o controle de concorrência no banco de dados (anti-overbooking) e refatoração de regras de negócio para separação rígida de perfis de acesso.</p>
-                <div class="d-flex flex-wrap gap-2 mb-4">
-                  <span class="badge badge-senior rounded-pill">Ruby on Rails</span>
-                  <span class="badge badge-senior rounded-pill">PostgreSQL</span>
-                  <span class="badge badge-senior rounded-pill">Docker</span>
-                </div>
-                <div class="d-flex gap-3 mt-auto">
-                  <a href="https://bh-agendamentos.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Live Demo &rarr;</a>
-                  <a href="https://github.com/Peuvictor/bh_agendamentos" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card h-100 p-3 bg-white">
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5 fw-bold mb-3 text-senior-accent">Alter Snack E-commerce</h3>
-                <p class="text-muted small mb-4">Plataforma web construída com foco em performance. Envolveu a integração de gateway de pagamento (Stripe) e orquestração de processos internos utilizando LLMs.</p>
-                <div class="d-flex flex-wrap gap-2 mb-4">
-                  <span class="badge badge-senior rounded-pill">Ruby on Rails</span>
-                  <span class="badge badge-senior rounded-pill">Stripe Webhooks</span>
-                  <span class="badge badge-senior rounded-pill">OpenAI SDK</span>
-                </div>
-                <div class="d-flex gap-3 mt-auto">
-                  <a href="https://altersnack.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Live Demo &rarr;</a>
-                  <a href="https://github.com/Peuvictor/altersnack" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card h-100 p-3 bg-white">
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5 fw-bold mb-3 text-senior-accent">Job Search Automator & Copilots</h3>
-                <p class="text-muted small mb-4">Pipeline de automação inteligente. Parseamento dinâmico de DOM, resiliência contra bloqueios na coleta de dados e criação de fluxos utilizando IAs generativas como copilotos operacionais.</p>
-                <div class="d-flex flex-wrap gap-2 mb-4">
-                  <span class="badge badge-senior rounded-pill">Python</span>
-                  <span class="badge badge-senior rounded-pill">Selenium</span>
-                  <span class="badge badge-senior rounded-pill">Azure AI</span>
-                </div>
-                <div class="d-flex gap-3 mt-auto">
-                  <a href="#" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card h-100 p-3 bg-white">
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5 fw-bold mb-3 text-senior-accent">Filmow Insights & Scraper</h3>
-                <p class="text-muted small mb-4">Motor de recomendação e dashboard cinematográfico. Implementação de fallbacks eficientes para contornar bloqueios de IP (Erro 403) na extração massiva de dados, com rotinas avançadas de higienização.</p>
-                <div class="d-flex flex-wrap gap-2 mb-4">
-                  <span class="badge badge-senior rounded-pill">Ruby/Nokogiri</span>
-                  <span class="badge badge-senior rounded-pill">PostgreSQL</span>
-                  <span class="badge badge-senior rounded-pill">Machine Learning</span>
-                </div>
-                <div class="d-flex gap-3 mt-auto">
-                  <a href="https://filmow-insights.onrender.com/" target="_blank" class="text-senior-accent text-decoration-none fw-bold">Live Demo &rarr;</a>
-                  <a href="https://github.com/Peuvictor/filmow-insights" target="_blank" class="text-secondary text-decoration-none fw-semibold"><i class="fab fa-github"></i> Source</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="arquitetura" class="py-5 section-light border-top" data-aos="fade-up">
-      <div class="container">
-        <h2 class="section-title h3 text-center mb-5">Stack Tecnológica</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Backend & APIs</h4>
-            <ul class="list-unstyled text-secondary">
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Ruby on Rails (Monolitos & API)</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Java & Spring Boot</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Design Patterns & Clean Code</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Data, Cloud & DevOps</h4>
-            <ul class="list-unstyled text-secondary">
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> PostgreSQL & SQL</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Microsoft Azure & Render</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Docker & GitHub Actions</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="h6 fw-bold text-uppercase text-muted mb-3">Workflow, AI & Automação</h4>
-            <ul class="list-unstyled text-secondary">
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Python (Data Scrape & automação)</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Integração de LLMs (Azure AI, OpenAI)</li>
-              <li class="mb-2"><i class="fas fa-check text-senior-accent me-2"></i> Processamento Assíncrono (Sidekiq)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contato" class="py-5 text-center section-gray border-top" data-aos="fade-up">
-      <div class="container">
-        <h2 class="section-title h3 mb-3">Contato</h2>
-        <p class="text-muted mb-4">Disponível para discutir arquitetura de software e novas oportunidades.</p>
-        <div class="d-flex justify-content-center gap-4">
-          <a href="mailto:peuvictor22@gmail.com" class="text-dark text-decoration-none fs-4 hover-accent" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/pedro-victor" target="_blank" class="text-dark text-decoration-none fs-4 hover-accent" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Peuvictor" target="_blank" class="text-dark text-decoration-none fs-4 hover-accent" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-    </section>
-
+    <section class="about-section" id="sobre" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow">ALÉM DO CÓDIGO</p><h2 id="about-title">Curiosidade<br>que vira <em>prática.</em></h2></div><div class="about-copy"><p>Sou Pedro Victor, desenvolvedor em Belo Horizonte. Trabalho com aplicações Rails e aprofundo meus estudos em Java, Spring Boot, React e IA aplicada ao desenvolvimento. Minha experiência anterior em gestão me ajuda a entender o problema antes de escolher a solução.</p><p>Estudo Análise e Desenvolvimento de Sistemas na UniCesumar e concluí o bootcamp de desenvolvimento web Full Stack do Le Wagon. Aprendo construindo e documentando meus projetos.</p><div class="skill-list"><span>Ruby on Rails</span><span>Java / Spring Boot</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>Testes</span><span>Integrações com IA</span></div></div></div></section>
+    <section class="contact-section" id="contato" aria-labelledby="contact-title"><div class="wrap contact-inner"><p class="eyebrow">TEM UM PROJETO OU UMA OPORTUNIDADE?</p><h2 id="contact-title">Vamos criar<br><em>algo bom juntos.</em></h2><a class="button button-dark" href="mailto:peuvictor22@gmail.com">Enviar um e-mail <span aria-hidden="true">↗</span></a><div class="social-links"><a href="https://www.linkedin.com/in/pedro-guimaraes-dev/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/Peuvictor" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:peuvictor22@gmail.com">E-mail ↗</a></div></div></section>
   </main>
-
-  <footer class="py-4 text-center bg-senior-dark text-white">
-    <div class="container">
-      <p class="small mb-0 opacity-75">&copy; 2026 Pedro Victor Guimarães. Engenharia & Desenvolvimento.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, once: true, offset: 50 });
-  </script>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> Pedro Victor Guimarães</span><a href="#inicio">Voltar ao topo ↑</a><span>Feito com atenção aos detalhes.</span></div></footer>
 </body>
 </html>
