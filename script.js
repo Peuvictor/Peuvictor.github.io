@@ -1,46 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Smooth Scroll para links internos
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 70, // Pequeno offset para o menu não tapar o título
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-
-  // Highlight do menu ao rolar a página
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('header .nav-link');
-
-  function updateActiveLink() {
-    let current = '';
-    const offsetThreshold = 100; // Define o ponto onde a seção muda
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= (sectionTop - offsetThreshold) && pageYOffset < (sectionTop + sectionHeight - offsetThreshold)) {
-        current = section.getAttribute('id');
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove('btn-light', 'text-dark');
-      link.classList.add('btn-outline-light');
-      if (link.getAttribute('href').includes(current)) {
-        link.classList.add('btn-light', 'text-dark');
-        link.classList.remove('btn-outline-light');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', updateActiveLink);
-  updateActiveLink(); // Executa uma vez ao carregar para definir a seção inicial
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.site-nav');
+menuToggle.addEventListener('click', () => {
+  const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+  menuToggle.setAttribute('aria-expanded', String(open));
+  menuToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  nav.classList.toggle('is-open', open);
 });
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+  nav.classList.remove('is-open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-label', 'Abrir menu');
+}));
+const filters = document.querySelectorAll('.filter');
+const cards = document.querySelectorAll('.project-card');
+filters.forEach(button => button.addEventListener('click', () => {
+  const category = button.dataset.filter;
+  filters.forEach(filter => {
+    const active = filter === button;
+    filter.classList.toggle('is-active', active);
+    filter.setAttribute('aria-pressed', String(active));
+  });
+  let visible = 0;
+  cards.forEach(card => {
+    const match = category === 'all' || card.dataset.category.split(' ').includes(category);
+    card.hidden = !match;
+    if (match) visible++;
+  });
+  document.querySelector('.filter-empty').hidden = visible > 0;
+}));
+document.querySelector('#year').textContent = new Date().getFullYear();
